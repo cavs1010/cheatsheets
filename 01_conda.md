@@ -2,6 +2,11 @@
 
 Conda is an open source package management system and environment management system.
 
+## Sinmple explanation of what is an environment👨🏽‍🏫
+
+An environment manager in computing is like having different toolboxes for different projects. Each toolbox (or "environment") has the exact tools you need for a specific project, so there's no mix-up or interference. This way, you can switch easily between projects without worrying about having the wrong tools in hand. It keeps everything organized and runs smoothly.
+
+
 ## 💿 Installation
 
 Conda can be downloaded and installed via [Anaconda](https://www.anaconda.com/download).
