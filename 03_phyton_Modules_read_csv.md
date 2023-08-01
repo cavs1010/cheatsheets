@@ -104,6 +104,7 @@ Charlie,25,Chicago
 
 Here, the first line is the header, and the following lines are the data records. 📝
 
+👓 ***Read CSV file*** 👓
 
 The csv module implements classes to read and write tabular data in CSV format. In the example below, we specify the delimiter as ',':
 
@@ -115,3 +116,22 @@ with open('file.csv', 'r') as file:
     for row in reader:
         print(row)  # prints each row of the CSV file
 ~~~
+
+✍️ ***Writing to CSV Files*** ✍️
+
+In Python, you can use the `csv` module to write to CSV files, and you can specify a custom delimiter. Here's an example:
+
+~~~
+import csv
+
+# Data to be written
+data = [['Name', 'Age', 'City'], ['Alice', '20', 'New York'], ['Bob', '30', 'Los Angeles'], ['Charlie', '25', 'Chicago']]
+
+# Writing data to file
+with open('file.csv', 'w', newline='') as file:
+    writer = csv.writer(file, delimiter=',')
+    writer.writerows(data)
+~~~
+
+In this example, we first import the `csv` module. Then, we define the data that we want to write to the CSV file. We open the file in 'w' mode (which stands for 'write'). We create a `writer` object and specify the delimiter as ','. We then use the `writerows` function to write our data to the file. Each field in a record is separated by a comma in the output file. 📝
+
