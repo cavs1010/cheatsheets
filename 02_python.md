@@ -1,4 +1,4 @@
-# 🐍 Python Cheat Sheet 🐍
+# 🐍 Basic Python 🐍
 
 This README file is a cheat sheet for Python, including variable types, printing statements, using `str()` for printing numbers, f-string, inputs and prompts, if/elif/else statements, lists, removing elements from a list, and loops.
 
