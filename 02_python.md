@@ -1,6 +1,6 @@
 # 🐍 Python Cheat Sheet 🐍
 
-This README file is a cheat sheet for Python, including variable types, printing statements, f-string, inputs and prompts, if/elif/else statements, lists, and loops.
+This README file is a cheat sheet for Python, including variable types, printing statements, using `str()` for printing numbers, f-string, inputs and prompts, if/elif/else statements, lists, removing elements from a list, and loops.
 
 ## Variable Types 🧮
 
@@ -32,6 +32,12 @@ This README file is a cheat sheet for Python, including variable types, printing
   ~~~
   x = 10
   print(x)
+  ~~~
+
+- **Print a Number as a String**
+  ~~~
+  x = 10
+  print('The number is ' + str(x))
   ~~~
 
 ## F-strings (formatted string literals) 🎭
@@ -95,13 +101,29 @@ This README file is a cheat sheet for Python, including variable types, printing
   numbers.append(6)
   ~~~
 
+- **Remove an item from a list**
+  ~~~
+  numbers.remove(1) # removes the first occurrence of 1 in the list
+  ~~~
+
+- **Remove an item at a specific index**
+  ~~~
+  numbers.pop(0) # removes the item at index 0
+  ~~~
+
 ## Loops 🔄
 
 - **For loop**
   ~~~
-  numbers = [1, 2, 3]
+  numbers = [1, 2, 3, 4]
   for number in numbers:
-      print(number)
+      print(number) # it will print each of the elements in the list numbers
+  ~~~
+
+- **For loop with range**
+  ~~~
+  for i in range(5): # gives i values from 0 to 4
+      print(i)
   ~~~
 
 - **While loop**
