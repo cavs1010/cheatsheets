@@ -133,3 +133,20 @@ This README file is a cheat sheet for Python, including variable types, printing
       print(i)
       i += 1
   ~~~
+
+- **For loop with enumerate**
+  In Python, the `enumerate` function adds a counter to an iterable (like a list) and returns it as an `enumerate` object. This can be used to get the index of each item in the list, as well as the item itself. Here's an example:
+
+  ~~~
+  my_list = ['apple', 'banana', 'cherry']
+  for index, item in enumerate(my_list):
+      print(f"Index: {index}, Item: {item}")
+  ~~~
+
+  In this example, `enumerate` provides a convenient way to access both the index and the value of each item in the list during the loop! 🔄
+
+
+
+
+
+
