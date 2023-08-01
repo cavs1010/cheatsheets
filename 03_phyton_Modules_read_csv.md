@@ -45,11 +45,12 @@ print(content)
 Here, `./folder/myfile.txt` is the relative path to the file. `./` represents the current directory, and `folder/myfile.txt` is the path to the file from there.
 
 ## Importing Modules 🧩
+In Python, a module is like a toolbox 🧰. It's a file containing a set of functions or variables that you can include in your project. Think of it like a piece of code that someone else has written that you can use in your own programs. For example, the math module in Python contains lots of helpful tools for doing mathematical operations. You can use the tools in the module by importing it into your code.
 
 To use a module in Python, you can import it using the `import` keyword:
 
 ~~~
-import os
+import math
 ~~~
 
 ## Basic Modules in Python 🔧
