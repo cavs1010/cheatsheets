@@ -25,6 +25,38 @@ my_dict['age'] = 21
 print(my_dict['age'])  # Output: 21
 ~~~
 
+#### Getting all the keys and values from a dictionary
+~~~
+# Here's our second example dictionary
+my_dict = {"Alice": 25, "Bob": 30, "Charlie": 35}
+
+# Get all keys
+keys = my_dict.keys()
+print(list(keys))  # Output: ['Alice', 'Bob', 'Charlie']
+
+# Get all values
+values = my_dict.values()
+print(list(values))  # Output: [25, 30, 35]
+~~~
+
+#### Iterating Through a Dictionary with `.items()` 🔄
+
+To get each key-value pair one by one, we use `.items()`. This is especially handy inside a `for` loop:
+
+~~~
+for key, value in my_dict.items():
+    print(f"{key} is {value} years old.")
+~~~
+
+This will output:
+
+~~~
+Alice is 25 years old.
+Bob is 30 years old.
+Charlie is 35 years old.
+~~~
+
+
 ## List Comprehensions 🔄
 List comprehensions are like a magic spell that lets you make a whole list in just one line of code. 🪄
 
