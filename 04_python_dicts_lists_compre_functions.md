@@ -1,4 +1,6 @@
-# Python Cheatsheet 📚
+# 🐍 Python Cheat Sheet 3 🐍
+
+This cheatsheet covers key concepts in Python, including dictionaries, list comprehensions, and functions. We'll talk about what they are, how to use them, and include some handy examples. Let's get started! 👩‍💻
 
 ## Dictionaries 🗂️
 A dictionary in Python is like a bag where you can put different things and each thing has a label attached to it. The label is called the 'key' and the thing itself is called the 'value'. 🏷️
