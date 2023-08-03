@@ -58,19 +58,45 @@ Charlie is 35 years old.
 
 
 ## List Comprehensions 🔄
-List comprehensions are like a magic spell that lets you make a whole list in just one line of code. 🪄
+
+Imagine list comprehension as a magic box 🎁 that takes in a list and transforms it into a new list. Here's how it works:
 
 ~~~
-# Create a list of numbers 0-9
-squares = [n for n in range(10)]
+# This is our original list
+original_list = [1, 2, 3, 4, 5]
+
+# We give it to our magic box
+new_list = [number * 2 for number in original_list]
+
+# Let's see what our new list looks like
+print(new_list)  # Output: [2, 4, 6, 8, 10]
 ~~~
 
-You can even change the items in the list or filter them:
+In this example, our 'magic box' is doubling each number from the original list. The magic box is really just this line of code:
 
 ~~~
-# Create a list of odd squares
-odd_squares = [n**2 for n in range(10) if n % 2 != 0]
+new_list = [number * 2 for number in original_list]
 ~~~
+
+This says: "For each `number` in `original_list`, multiply `number` by 2 and put it into `new_list`." That's a list comprehension!
+
+### Using `if` Statements in List Comprehensions 🚦
+
+We can also use `if` statements inside our 'magic box'. Let's say we only want to double the numbers that are greater than 2:
+
+~~~
+# This is our original list again
+original_list = [1, 2, 3, 4, 5]
+
+# This time, we only double numbers greater than 2
+new_list = [number * 2 for number in original_list if number > 2]
+
+# Let's see the new list
+print(new_list)  # Output: [6, 8, 10]
+~~~
+
+In this example, our 'magic box' only includes the numbers in the new list if they are greater than 2. 
+
 
 ## Functions 🧮
 A function in Python is like a cooking recipe. 🍲 You give the recipe (function) some ingredients (parameters), and it will give you a dish (result).
