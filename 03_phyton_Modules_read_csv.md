@@ -1,4 +1,4 @@
-# 🐍 Python Cheat Sheet 🐍
+# 🐍 Python Cheat Sheet 2 🐍
 
 This cheat sheet covers reading, writing, appending to files, finding files with a relative path, importing modules, and provides a basic introduction to the string, random, os (with os.path.join), and csv modules.
 
