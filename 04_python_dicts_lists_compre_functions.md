@@ -99,23 +99,64 @@ In this example, our 'magic box' only includes the numbers in the new list if th
 
 
 ## Functions 🧮
-A function in Python is like a cooking recipe. 🍲 You give the recipe (function) some ingredients (parameters), and it will give you a dish (result).
+### Functions with No Parameters 🌮
+Imagine you have a recipe to make a plain cheese quesadilla. You don't need to know anything extra; you just follow the recipe, and you'll get your cheese quesadilla.
+
+In Python, a function without parameters is like this recipe. You don't need to give it any extra information; you just call the function, and it does its job.
 
 ~~~
-def greet(name):
-    print(f"Hello, {name}!")
+def make_cheese_quesadilla():
+    print("Cheese quesadilla is ready!")
+
+make_cheese_quesadilla()  # This will print: Cheese quesadilla is ready!
 ~~~
 
-Sometimes, a recipe can work even if you don't have all the ingredients. In a function, these are called default parameters.
+### Functions with Parameters 🧀🍅
+Now, what if you want to add some extra ingredients, like tomatoes or onions? You need to know which extras to add.
+
+In Python, a function with parameters is like a customizable quesadilla recipe. You tell the function what you want, and it gives you a quesadilla with those specific ingredients.
 
 ~~~
-def greet(name='Guest'):
-    print(f"Hello, {name}!")
+def make_custom_quesadilla(cheese, filling):
+    print(f"Quesadilla with {cheese} cheese and {filling} is ready!")
+
+make_custom_quesadilla("Cheddar", "Tomatoes")  # This will print: Quesadilla with Cheddar cheese and Tomatoes is ready!
 ~~~
 
-A function can also give you something back when it's done. This is called a return value.
+### Functions with Default Parameters 🧀🍅🌶️
+Let's say that most of the time, you prefer cheddar cheese and chicken in your quesadilla, but you sometimes want to change it. 
+
+You can have a default parameter in your function for these common ingredients, and change them when you want something different.
 
 ~~~
-def square(n):
-    return n**2
+def make_default_quesadilla(cheese="Cheddar", filling="Chicken"):
+    print(f"Quesadilla with {cheese} cheese and {filling} is ready!")
+
+make_default_quesadilla()  # This will print: Quesadilla with Cheddar cheese and Chicken is ready!
+make_default_quesadilla("Mozzarella", "Mushrooms")  # This will print: Quesadilla with Mozzarella cheese and Mushrooms is ready!
+~~~
+
+### Functions that Change a Variable 🔄
+Imagine you have a pre-made quesadilla and want to add some hot sauce. You can modify the existing quesadilla, but your original recipe remains the same.
+
+~~~
+def add_hot_sauce(quesadilla):
+    quesadilla += " with hot sauce"
+    print(quesadilla)
+
+quesadilla = "Chicken quesadilla"
+add_hot_sauce(quesadilla)  # This will print: Chicken quesadilla with hot sauce
+print(quesadilla)  # This will print: Chicken quesadilla (original variable is unchanged)
+~~~
+
+### Functions that Return a Value 🎁
+Sometimes, you might want to keep the new customized quesadilla for later. A function that returns a value lets you store the result and use it elsewhere.
+
+~~~
+def add_guacamole(quesadilla):
+    return quesadilla + " with guacamole"
+
+quesadilla = "Beef quesadilla"
+new_quesadilla = add_guacamole(quesadilla)  # You can keep this new quesadilla and use it later
+print(new_quesadilla)  # This will print: Beef quesadilla with guacamole
 ~~~
